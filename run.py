@@ -15,8 +15,8 @@ def get_predictor_model():
     return model
 
 def send_email(subject, body, to_email):
-    from_email = "nithushetty121@gmail.com"
-    password = "Nithu@2003"
+    from_email = "nihu@gmail.com"
+    password = "3"
 
     msg = MIMEMultipart()
     msg['From'] = from_email
@@ -25,7 +25,7 @@ def send_email(subject, body, to_email):
 
     msg.attach(MIMEText(body, 'plain'))
 
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP('smtp.gmail.com', 589)
     server.starttls()
     server.login(from_email, password)
     text = msg.as_string()
