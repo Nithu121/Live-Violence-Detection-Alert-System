@@ -17,7 +17,7 @@ def get_predictor_model():
     return model
 
 def send_telegram_message(message, chat_id, video_path=None, image_path=None, location=None, timestamp=None):
-    bot_token = '7526100016:AAE87m3b15vuECucLZW7mg_QB5_wj5-b4TA'
+    bot_token = '///'
     send_message_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     send_video_url = f"https://api.telegram.org/bot{bot_token}/sendVideo"
     send_photo_url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
